@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Old Money Co.</title>
+    <meta name="description" content="Your shopping cart - Old Money Co.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cart.css">
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo">
+            <h1><a href="/html/index.html">Old Money Co.</a></h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="/html/index.html" class="nav-link">Home</a></li>
+            <li><a href="/html/index.html#about" class="nav-link">About</a></li>
+            <li><a href="/html/index.html#shop" class="nav-link">Shop</a></li>
+            <li><a href="/html/favorites.html" class="nav-link">Favorites <span id="favorites-count" class="favorites-count">0</span></a></li>
+            <li><a href="/html/cart.html" class="nav-link active">Cart <span id="cart-count" class="cart-count">0</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <div class="container">
+        <div class="cart-header">
+          <h1 class="section-title">Shopping Cart</h1>
+          <p class="cart-subtitle">Review your selected items before checkout</p>
+        </div>
+
+        <div id="cart-content" class="cart-content">
+          <!-- Cart items will be loaded here by JavaScript -->
+        </div>
+
+        <div id="empty-cart" class="empty-cart" style="display: none;">
+          <div class="empty-icon">🛍️</div>
+          <h3 class="empty-title">Your Cart is Empty</h3>
+          <p class="empty-text">Start shopping to add items to your cart</p>
+          <a href="/html/index.html#shop" class="explore-button">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2025 Old Money Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/cart.js"></script>
+  </body>
+</html>

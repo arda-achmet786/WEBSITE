@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Money Co. - Quiet Luxury. Timeless Style.</title>
+    <meta name="description" content="Refined essentials for the modern aristocrat. Discover timeless luxury clothing with Old Money Co.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo">
+            <h1>Old Money Co.</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#shop" class="nav-link">Shop</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#" class="nav-link" id="favorites-link">Favorites <span id="favorites-count" class="favorites-count">0</span></a></li>
+            <li><a href="#" class="nav-link" id="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Quiet Luxury.<br>Timeless Style.</h1>
+        <p class="hero-subtitle">Refined essentials for the modern aristocrat.</p>
+        <button class="cta-button" data-scroll-to="shop">Explore Collection</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Our Legacy</h2>
+        <div class="about-content">
+          <div class="about-intro">
+            <p class="about-text-large">
+              Old Money Co. embodies the essence of understated elegance and timeless sophistication. 
+              We believe in the power of quality over quantity, crafting pieces that transcend fleeting 
+              trends to become cherished staples in your wardrobe.
+            </p>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-icon">🏛️</div>
+              <h3 class="about-card-title">Heritage Craftsmanship</h3>
+              <p class="about-card-text">
+                Each piece is meticulously crafted using traditional techniques passed down through generations, 
+                ensuring unparalleled quality and attention to detail.
+              </p>
+            </div>
+            
+            <div class="about-card">
+              <div class="about-icon">🌿</div>
+              <h3 class="about-card-title">Sustainable Luxury</h3>
+              <p class="about-card-text">
+                Our philosophy centers on slow fashion and responsible sourcing, creating timeless pieces 
+                that honor both craftsmanship and environmental consciousness.
+              </p>
+            </div>
+            
+            <div class="about-card">
+              <div class="about-icon">✨</div>
+              <h3 class="about-card-title">Quiet Elegance</h3>
+              <p class="about-card-text">
+                We design for those who appreciate the refined aesthetic of old-world charm meets modern 
+                sensibility—luxury that speaks volumes without saying a word.
+              </p>
+            </div>
+          </div>
+          
+          <div class="about-story">
+            <h3 class="story-title">Our Story</h3>
+            <p class="story-text">
+              Founded on the principles of timeless elegance and understated luxury, Old Money Co. was born 
+              from a desire to create clothing that transcends seasons and trends. Our founder, inspired by 
+              the effortless sophistication of European aristocracy and American old money families, sought 
+              to bring that same level of refinement to the modern wardrobe.
+            </p>
+            <p class="story-text">
+              Every piece in our collection is thoughtfully designed for the discerning individual who values 
+              quality, heritage, and the kind of quiet confidence that comes from wearing something truly 
+              exceptional. We don't chase trends—we set the standard for timeless style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+      <div class="container">
+        <h2 class="section-title">Our Collection</h2>
+        
+        <!-- Category Filter -->
+        <div class="category-filter">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="outerwear">Outerwear</button>
+          <button class="filter-btn" data-category="tops">Tops</button>
+          <button class="filter-btn" data-category="bottoms">Bottoms</button>
+          <button class="filter-btn" data-category="accessories">Accessories</button>
+          <button class="filter-btn" data-category="footwear">Footwear</button>
+        </div>
+
+        <div class="product-grid">
+          
+          <!-- OUTERWEAR CATEGORY -->
+          <!-- Product 1 -->
+          <div class="product-card" data-category="outerwear" data-product-id="heritage-overcoat">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Heritage Cashmere Overcoat" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Heritage Cashmere Overcoat</h3>
+              <p class="product-price">$2,850</p>
+              <button class="favorite-btn" data-product-id="heritage-overcoat" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" data-category="outerwear" data-product-id="wool-blazer">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Wool Blazer" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tailored Wool Blazer</h3>
+              <p class="product-price">$1,450</p>
+              <button class="favorite-btn" data-product-id="wool-blazer" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" data-category="outerwear" data-product-id="trench-coat">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Trench Coat" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Classic Trench Coat</h3>
+              <p class="product-price">$1,950</p>
+              <button class="favorite-btn" data-product-id="trench-coat" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card" data-category="outerwear" data-product-id="velvet-jacket">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Velvet Dinner Jacket" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Velvet Dinner Jacket</h3>
+              <p class="product-price">$2,200</p>
+              <button class="favorite-btn" data-product-id="velvet-jacket" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- TOPS CATEGORY -->
+          <!-- Product 5 -->
+          <div class="product-card" data-category="tops" data-product-id="silk-blouse">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Silk Blouse" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Silk Charmeuse Blouse</h3>
+              <p class="product-price">$485</p>
+              <button class="favorite-btn" data-product-id="silk-blouse" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card" data-category="tops" data-product-id="cashmere-sweater">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Cashmere Sweater" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cashmere V-Neck Sweater</h3>
+              <p class="product-price">$650</p>
+              <button class="favorite-btn" data-product-id="cashmere-sweater" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card" data-category="tops" data-product-id="oxford-shirt">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Oxford Shirt" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Classic Oxford Shirt</h3>
+              <p class="product-price">$295</p>
+              <button class="favorite-btn" data-product-id="oxford-shirt" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card" data-category="tops" data-product-id="merino-turtleneck">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Merino Turtleneck" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Merino Wool Turtleneck</h3>
+              <p class="product-price">$385</p>
+              <button class="favorite-btn" data-product-id="merino-turtleneck" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- BOTTOMS CATEGORY -->
+          <!-- Product 9 -->
+          <div class="product-card" data-category="bottoms" data-product-id="wool-trousers">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Wool Trousers" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tailored Wool Trousers</h3>
+              <p class="product-price">$675</p>
+              <button class="favorite-btn" data-product-id="wool-trousers" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-card" data-category="bottoms" data-product-id="pleated-skirt">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Pleated Skirt" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pleated Midi Skirt</h3>
+              <p class="product-price">$425</p>
+              <button class="favorite-btn" data-product-id="pleated-skirt" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="product-card" data-category="bottoms" data-product-id="palazzo-pants">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Wide Leg Pants" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Wide Leg Palazzo Pants</h3>
+              <p class="product-price">$550</p>
+              <button class="favorite-btn" data-product-id="palazzo-pants" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="product-card" data-category="bottoms" data-product-id="high-waisted-trousers">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="High-Waisted Trousers" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">High-Waisted Trousers</h3>
+              <p class="product-price">$595</p>
+              <button class="favorite-btn" data-product-id="high-waisted-trousers" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ACCESSORIES CATEGORY -->
+          <!-- Product 13 -->
+          <div class="product-card" data-category="accessories" data-product-id="silk-scarf">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Silk Scarf" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Heritage Silk Scarf</h3>
+              <p class="product-price">$185</p>
+              <button class="favorite-btn" data-product-id="silk-scarf" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 14 -->
+          <div class="product-card" data-category="accessories" data-product-id="leather-handbag">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Leather Handbag" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Italian Leather Handbag</h3>
+              <p class="product-price">$1,250</p>
+              <button class="favorite-btn" data-product-id="leather-handbag" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 15 -->
+          <div class="product-card" data-category="accessories" data-product-id="pearl-necklace">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Pearl Necklace" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cultured Pearl Necklace</h3>
+              <p class="product-price">$850</p>
+              <button class="favorite-btn" data-product-id="pearl-necklace" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- FOOTWEAR CATEGORY -->
+          <!-- Product 16 -->
+          <div class="product-card" data-category="footwear" data-product-id="oxford-shoes">
+            <div class="product-image">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="Oxford Shoes" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Handcrafted Oxford Shoes</h3>
+              <p class="product-price">$750</p>
+              <button class="favorite-btn" data-product-id="oxford-shoes" aria-label="Add to favorites">
+                <span class="heart-icon">♡</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-subtitle">We'd love to hear from you. Reach out for inquiries, appointments, or just to say hello.</p>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <div class="icon-wrapper">📍</div>
+              </div>
+              <h3 class="contact-title">Visit Our Atelier</h3>
+              <p class="contact-text">
+                123 Madison Avenue<br>
+                New York, NY 10016<br>
+                United States
+              </p>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <div class="icon-wrapper">📞</div>
+              </div>
+              <h3 class="contact-title">Call Us</h3>
+              <p class="contact-text">
+                +1 (212) 555-0123<br>
+                Mon - Fri: 9:00 AM - 6:00 PM<br>
+                Sat: 10:00 AM - 4:00 PM
+              </p>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <div class="icon-wrapper">✉️</div>
+              </div>
+              <h3 class="contact-title">Email Us</h3>
+              <p class="contact-text">
+                hello@oldmoneyco.com<br>
+                concierge@oldmoneyco.com<br>
+                press@oldmoneyco.com
+              </p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <div class="form-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <div class="form-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input">
+                <div class="form-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" name="subject" class="form-select" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="appointment">Private Appointment</option>
+                  <option value="custom">Custom Order</option>
+                  <option value="press">Press & Media</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+                <div class="form-line"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                <div class="form-line"></div>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <div class="btn-ripple"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="contact-footer">
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <div class="social-icon">📷</div>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <div class="social-icon">📘</div>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <div class="social-icon">🐦</div>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <div class="social-icon">💼</div>
+            </a>
+          </div>
+          <p class="contact-footer-text">
+            Follow us for the latest collections and behind-the-scenes glimpses into our world of quiet luxury.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2025 Old Money Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
